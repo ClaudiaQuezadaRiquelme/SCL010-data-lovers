@@ -1,23 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="es">
+  <head>  
+    <!--  El elemento head contiene los metadatos que aportan información extra sobre la página, como su título, descripción, autor, etc. -->
+    <!--  Además, puede incluir referencias externas a contenidos necesarios para que el documento se muestre y comporte de manera correcta (como hojas de estilos o scripts) -->
+    <meta charset="utf-8"> 
+    <meta name="description" content="Guia Básica Para Tu Aventura Pokémon">
+    <meta name="keywords" content="pokemon,principiante,guia, kanto">
+    <meta name="author" content="Carolina Medina">
+    <meta name="author" content="Claudia Quezada">
+    <meta name="viewport" content="width=device-width, initial-scale=4.0">
+
     <title>Data Dex</title>
           <h1>Tu Mejor Guía Para Tu Aventura Pokémon</h1>
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="alternate" type="application/atom+xml"
+                          title="My Weblog feed"
+                          href="/feed/" />
+    <link rel="search" type="application/opensearchdescription+xml"
+                          title="My Weblog search"
+                          href="opensearch.xml"  />
+    <link rel="shortcut icon" href="/favicon.ico" /> -->
   </head>
   <body>
+    <header>
+        <a href="/"><img src=logo.png alt="home"></a>
+        <hgroup>
+            <h1>Title</h1>
+            <h2 class="tagline">
+                A lot of effort went into making this effortless.
+            </h2>
+        </hgroup>
+    </header>
+    <nav>
+        <ul>
+            <li><a  src=img/BSoton_1.JPEG href="#"></a></li>
+            <li><a  href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+    <section class="articles">
+        <article>
+            <time datetime="2009-10-22">October 22, 2009</time>
+            <h2>
+                <a href="#" title="link to this post">Travel day</a>
+            </h2>
+            <div class="content">
+                Content goes here...
+            </div>
+            <section class="comments">
+                <p><a href="#">3 comments</a></p>
+            </section>
+        </article>
+    </section>
+    <aside>
+        <div class="related"></div>
+        <div class="related"></div>
+        <div class="related"></div>
+    </aside>
+    <footer>
+        <p>&#167;</p>
+        <p>&#169; 2013&#8211;9 <a href="#">Arkaitz Garro</a></p> 
+    </footer>
 
-    <p>este es una prueba</p>
+     
+    <!-- <p></p>
     <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
+    <script src="./data/injuries/injuries.js"></script> -->
     <!-- <script src="./data/pokemon/pokemon.js"></script> -->
     <!-- <script src="./data/steam/steam.js"></script> -->
     <!-- <script src="./data/worldbank/worldbank.js"></script> -->
     <!-- <script src="./data/lol/lol.js"></script> -->
     <!-- <script src="./data/patient/patient.js"></script> -->
     <!-- <script src="./data/rickandmorty/rickandmorty.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+    <!-- <script src="data.js"></script> -->
+    <!-- <script src="main.js"></script> -->
   </body>
 </html>
