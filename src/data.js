@@ -7,4 +7,20 @@ const example = () => {
   return 'example';
 };
 
+// function function_example(){
+// 	return "example";
+// };
+
+
+const example = () => {
+  return 'example';
+};
+
+
+
 window.example = example;
+// window.example = function_example;
+
+
+
+window.leer_data_1 = leer_data_1;
