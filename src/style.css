@@ -1,3 +1,10 @@
+@font-face {
+	font-family: "Pokemon_Hollow";
+	src:url("font/Pokemon_Hollow.ttf");
+}
+
+
+
 :root{
 	--color-rosapastel: #DEA5A4;
 }
@@ -13,17 +20,17 @@
 	flex-direction: root;
 	margin-top: 0px;
   	margin-bottom: 0px;
-	background-color: : var(--rosapastel);
-  	
+	background-color: : var(--rosapastel);  	
 }
-
+/*
 #body {
-	text-decoration: Pokemon Solid.ttf;
+	text-decoration: Pokemon_Hollow;
+}*/
 
-}
+
 
 h1 {
-  font-family: Pokemon Solid.ttf;
+  font-family: Pokemon_Hollow;
   font-size: 50px;
   text-align: center;
   color: orange;
