@@ -4,13 +4,13 @@ require('../src/data');
 require('./data.spec.js');
 
 
-describe('example', () => {
+describe('pokemon_results', () => {
   
   it('debería ser una función', () => {
-    assert.equal(typeof example, 'function');
+    assert.equal(typeof POKEMON, 'function');
   });
 
-  it('debería retornar "example"', () => {
-    assert.equal(example(), 'example');
+  it('debería retornar "pokemon_results"', () => {
+    assert.equal(POKEMON(), 'pokemon_results');
   });
 })

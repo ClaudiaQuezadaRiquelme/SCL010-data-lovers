@@ -1,26 +1,16 @@
-/* Manejo de data */
+// /* Manejo de data */
+// // esta es una función de ejemplo
+// // puedes ver como agregamos la función a nuestro objeto global window
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-const example = () => {
-  return 'example';
-};
-
-// function function_example(){
-// 	return "example";
+// const POKEMON = () => {
+//   return 'pokemon_results';
 // };
 
 
-const example = () => {
-  return 'example';
-};
+// window.POKEMON = POKEMON;
+// //window.leer_data_POKEMON = leer_data_POKEMON;
 
-
-
-window.example = example;
-// window.example = function_example;
-
-
-
-window.leer_data_1 = leer_data_1;
+for (let i=0; i<POKEMON.pokemon.length; i++){
+for(let x=0; x<POKEMON.pokemon[i].type.length; x++){
+if(POKEMON.pokemon[i].type[x]==="Fire"){
+console.log(POKEMON.pokemon[i].type[x])}}}
