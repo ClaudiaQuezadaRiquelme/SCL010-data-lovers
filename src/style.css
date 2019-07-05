@@ -11,16 +11,17 @@
 
 
 
-.botones: hover {
+.botones: hover { /*es un atributo que al posicionar el mouse en el boton este se agranda*/
 	background-color: pink;
 }
 
 #botones {
 	display: flex;
-	flex-direction: root;
-	margin-top: 0px;
-  	margin-bottom: 0px;
-	background-color: : var(--rosapastel);  	
+	flex-direction: row;
+	align-content: space-around;
+	justify-content: space-around;
+	align-content: center;
+	padding: 10px 100px 10px 100px;
 }
 /*
 #body {
@@ -38,18 +39,45 @@ h1 {
 
 nav {
 	background-color: orange;
-	padding-bottom: 20px 5px 10px;
+	
 }
 
 nav li{
 	list-style: none;
-	padding: 10px 10px 10px 5px;
-	padding-left: : 100px;
+	padding: 20px 10px 10px; 
+	/*padding-left: : 10px;*/
+	
 }
 
 img {
-	padding: 0px 10px 10px 10px;
-	text-align: center;
-	justify-content: space-between;
-	align-items: center;
+	/*padding: 10px 10px 10px 10px;*/
+	align-content: stretch;
+	align-content: space-around;
 }
+
+/*
+#Boton_1{
+	display: flex;
+	padding: 20px 20px 20px 20px;
+	align-content: stretch;
+}
+
+#Boton_2{
+	display: flex;
+	padding: 20px 20px 20px 20px;
+	align-content: stretch;
+}
+
+#Boton_3{
+	display: flex;
+	padding: 20px 20px 20px 20px;
+	align-content: stretch;
+}
+
+#Boton_4{
+	display: flex;
+	padding: 30px 30px 30px 30px;
+	align-content: stretch;
+}
+
+*/
