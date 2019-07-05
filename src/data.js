@@ -16,26 +16,35 @@ const arrayDataType = (stringType) => {//Función que retorna arreglo vacío de 
   return typeArray;
  };
 
+const arrayPokeType = () => {
+  ArrayType = []; //Array vacío donde guardaremos los tipos de pokemon
+
+  for(let i=0; i < pokeData.length; i++) {//recorremos el arreglo de pokes
+
+    if (ArrayType.length === 0){ //si el arreglo de tipos ya está vacío
+    ArrayType.push(pokeData[i].type[0]); //guarda el primer tipo de ese pokemon en el arreglo de tipos
+  }
+    else { //si el arreglo de tipos no está vacío
+      for (let x=0; x < pokeData[i].type.length; x++) { //recorremos el arreglo de tipos del pokemon
+        let count = 0; //contador que nos ayudará a reconocer cuando guardar el tipo en el arreglo de tipos sin que se repitan.
+
+        for (let z=0; z < ArrayType.length; z++) { //recorremos el arreglo de tipos
+          if (!(pokeData[i].type[x].localeCompare(ArrayType[z]))) {//si el tipo del pokemon es igual a un tipo del arreglo de tipos
+            continue; //continuar
+          }
+          else {
+            count++; //si no, aumenta el contador
+            if (count == ArrayType.length) { //si el contador es igual al largo del arreglo de tipos, significa que el tipo del pokemon no se ha guardado en el arreglo de tipos, por lo tanto, lo tenemos que guardar
+              ArrayType.push(pokeData[i].type[x]);//guarda el tipo de ese pokemon en el arreglo de tipos
+            }
+          }
+        }
+      }
+    }
+  }
+  return ArrayType;
+}
+
+
 window.arrayDataType = arrayDataType;
-
-// window.POKEMON = POKEMON;
-// //window.leer_data_POKEMON = leer_data_POKEMON;
-/*
-for (let i=0; i<POKEMON.pokemon.length; i++){
-for(let x=0; x<POKEMON.pokemon[i].type.length; x++){
-if(POKEMON.pokemon[i].type[x]==="Fire"){
-console.log(POKEMON.pokemon[i].type[x])}}}
-
-let ArrayVacio = [];
-for (let i=0; i<POKEMON.pokemon.length; i++){
-for(let x=0; x<POKEMON.pokemon[i].type.length; x++){
-console.log("pokemon: "+ POKEMON.pokemon[i].name);
-if(!(POKEMON.pokemon[i].type[x].localeCompare("Fire")))
-{ console.log(POKEMON.pokemon[i].type[x]);
-ArrayVacio.push(POKEMON.pokemon[i]);}}}
-
-for (let i=0; i<ArrayVacio.length; i++){
-console.log("pokemon: "+ ArrayVacio[i].name);
-for (let x=0; x<ArrayVacio[i].type.length; x++) {
-console.log(ArrayVacio[i].type[x]) } }
-*/
+window.arrayPokeType = arrayPokeType;
