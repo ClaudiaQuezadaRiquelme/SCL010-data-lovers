@@ -37,53 +37,38 @@
         </ul>
     </nav>
 
-
  </header>
-
-    <section> <!-- intentar hacer dinamico -->
-       <title >MENU</title><!--no aparece esta etiqueta en el navegador. Creo que <title> solamente funciona dentro de <head></head> -->
-        <nav id="dropdownMenu"> <!-- Acá crearemos nuestro MENU DESPLEGABLE dinámico -->
-          <!--
-           <ul >
-               <li>Grass</li>
-               <li>Poison</li>
-               <li>Fire</li>
-               <li>Flying</li>
-               <li>Water</li>
-               <li>Bug</li>
-               <li>Normal</li>
-               <li>Electric</li>
-               <li>Ground</li>
-               <li>Fighting</li>
-               <li>Psychic</li>
-               <li>Rock</li>
-               <li>Ice</li>
-               <li>Ghost</li>
-               <li>Dragon</li>
-          -->
-           </ul>
-        </nav>
-
-
-
+   
+    <section> <!-- intentar hacerdinamico -->
+              <select class=""  id="select_type">
+                  <option value="all">Tipos de Pokémon</option>
+                  <option value="Water">Agua</option>
+                  <option value="Bug">Bicho</option>
+                  <option value="Dragon">Dragón</option>
+                  <option value="Electric">Eléctrico</option>
+                  <option value="Ghost">Fantasma</option>
+                  <option value="Fire">Fuego</option>
+                  <option value="Ice">Hielo</option>
+                  <option value="Fighting">Lucha</option>
+                  <option value="Normal">Normal</option>
+                  <option value="Grass">Planta</option>
+                  <option value="Psychic">Psíquico</option>
+                  <option value="Rock">Roca</option>
+                  <option value="Ground">Tierra</option>
+                  <option value="Poison">Veneno</option>
+                  <option value="Flying">Volador</option>
+                </select>
+              <form class="">
+                <input class="barraBusqueda" id="search" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="" id="" type="button">Buscar</button>
+              </form>
+              <div id="pokes"></div>
     </section>
-
-<!--
-    <script>
-      for (var i = 0;  i<="type"; 0; i++) {
-        document.write
-      }
-
-    </script>
- -->
 
     <footer>
         <p></p>
         <p><a href="#">Quieres conocer el % de presencia Pokémon</a></p>
     </footer>
-
-
-
 
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
