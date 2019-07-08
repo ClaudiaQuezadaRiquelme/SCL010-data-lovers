@@ -23,6 +23,38 @@
 	align-content: center;
 	padding: 10px 100px 10px 100px;
 }
+
+.card {
+  color: white;
+  width: 200px;
+  height: 260px;
+  margin: 10px;
+  text-align: center;
+  background-image: url(https://i.pinimg.com/originals/dc/92/80/dc9280d6d991e4dfdaff0b16bf4764f8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.card img {
+
+  width: 130px;
+  height: 130px;
+  align-self: center;
+  margin: 1em;
+}
+.card-body{
+  width: 200px;
+  height: 140px;
+  padding: 0px;
+}
+
+
+
+
+
+
 /*
 #body {
 	text-decoration: Pokemon_Hollow;
@@ -54,6 +86,14 @@ img {
 	align-content: stretch;
 	align-content: space-around;
 }
+
+.barraBusqueda{
+	width: 180px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+
 
 /*
 #Boton_1{
