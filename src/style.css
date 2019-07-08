@@ -71,14 +71,14 @@ h1 {
 
 nav {
 	background-color: orange;
-	
+
 }
 
 nav li{
 	list-style: none;
-	padding: 20px 10px 10px; 
+	padding: 20px 10px 10px;
 	/*padding-left: : 10px;*/
-	
+
 }
 
 img {
@@ -93,7 +93,9 @@ img {
 	margin-right: 5px;
 }
 
-
+#select_type, #searchBar, #info{
+	display: none;
+}
 
 /*
 #Boton_1{

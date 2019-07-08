@@ -4,7 +4,7 @@
 
 const pokeData = POKEMON.pokemon;
 
-const arrayDataType = (stringType) => {//Función que retorna arreglo vacío de los pokemones del tipo ingresado
+const arrayDataType = (stringType) => {//Función que retorna arreglo con los pokemones del tipo ingresado
   let typeArray = [];//Crear array vacío donde se guardarán pokemones del tipo ingresado.
   for (let i=0; i<pokeData.length; i++) { //recorrer arreglo de pokemones y guardar pokemones en array vacio
     for(let x=0; x<pokeData[i].type.length; x++) {// recorre el arreglo de tipos de cada pokemon para saber cuál guardar.
@@ -50,7 +50,13 @@ const amountOfPokesByType = (stringType) => { //Retorna cantidad de pokemones po
   return typeArray.length;
 }
 
+const pokePercentage = (stringType) => {
+  return (100 * amountOfPokesByType(stringType)) / pokeData.length;
+}
+
 
 window.arrayDataType = arrayDataType;
 window.arrayPokeType = arrayPokeType;
 window.amountOfPokesByType = amountOfPokesByType;
+window.pokeData= pokeData;
+window.pokePercentage = pokePercentage;

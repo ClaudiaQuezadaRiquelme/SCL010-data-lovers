@@ -34,9 +34,9 @@
     </nav>
  </header>
 
-    <section> <!-- intentar hacerdinamico -->
+    <section>
               <select class=""  id="select_type">
-                  <option value="all">Tipos de Pokémon</option>
+                  <option value="all" selected="true" disabled="disabled">Tipos de Pokémon</option>
                   <option value="Water">Agua</option>
                   <option value="Bug">Bicho</option>
                   <option value="Dragon">Dragón</option>
@@ -53,10 +53,11 @@
                   <option value="Poison">Veneno</option>
                   <option value="Flying">Volador</option>
                 </select>
-              <form class="">
+              <form class="" id="searchBar">
                 <input class="barraBusqueda" id="search" type="search" placeholder="Buscar" aria-label="Search">
                 <button class="" id="" type="button">Buscar</button>
               </form>
+              <article id="info"></article>
               <div id="pokes"></div>
     </section>
 
