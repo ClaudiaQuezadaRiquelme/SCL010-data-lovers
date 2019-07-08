@@ -10,28 +10,23 @@ btnType.addEventListener("click", ()=> { // mostrar menu desplegable
 		let textNode = document.createTextNode(ArrayType[i]);// creo lo que quiero poner dentro de <option></option>
 		node.appendChild(textNode);//lo pongo dentro
 		document.getElementById("dropdownType").appendChild(node);//en <select id="dropdownType"></select> agrego el <option></option> creado
-		document.getElementsByTagName("OPTION")[i].setAttribute("value", ArrayType[i]); //Asigna value a cada <option> igual al tipo que alberga
+		node.setAttribute("value", ArrayType[i]);
+		//document.getElementsByTagName("OPTION")[i].setAttribute("value", ArrayType[i]); //Asigna value a cada <option> igual al tipo que alberga
 	}
-	$("#dropdownType").change(function(){//que pase algo cuando elegimos una opcion del menú desplegable
-	  alert("Esto lo cambiamos por lo que queremos que pase cuando seleccionemos un tipo.");
+	$("#dropdownType").change( ()=> {//que pase algo cuando elegimos una opcion del menú desplegable
+	  dropdownMenuOption(document.getElementById("dropdownType").value);//toma el valor elegido en el menú desplegable. Ej.: "Fire"
+
 	});
 
 });
 
-
-
-/*
 let dropdownMenuOption = (stringType) => {
-	let optionType = document.getElementById(stringType);
-	optionType.addEventListener("change", () => {
-		let typeArray = arrayDataType(stringType);
-		for (let i=0; i< typeArray.length; i++) {
-			let node = document.createElement("DIV");
-			let textNode = document.createTextNode(typeArray[i].name);
-			node.appendChild(textNode);
-			document.getElementById("pokes").appendChild(node);
-			document.getElementsByTagName("DIV")[i].setAttribute("id", typeArray[i].name);
-		}
+	let arrayPoke = arrayDataType(stringType);//arreglo de pokes del tipo stringType
+	for (let j=0; j<arrayPoke.length; j++) { //recorro el arreglo de pokes
+		let node = document.createElement("DIV");//creo el contenedor <div></div>
+		let textNode = document.createTextNode(arrayPoke[j].name);//escribo el nombre del poke en la posición j
+		node.appendChild(textNode);//agrego al poke en el contenedor <div></div>
+		document.getElementById("pokes").appendChild(node);//agrego el nodo al contenedor con id="pokes"
+		node.setAttribute("id", arrayPoke[j].name);//al nodo creado le asigno el id=arrayPoke[j]
 	}
-)};
-*/
+}
