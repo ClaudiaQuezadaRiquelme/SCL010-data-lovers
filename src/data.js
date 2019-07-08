@@ -45,6 +45,12 @@ const arrayPokeType = () => {
   return ArrayType;
 }
 
+const amountOfPokesByType = (stringType) => { //Retorna cantidad de pokemones por tipo indicado en stringType
+  let typeArray = arrayDataType(stringType);
+  return typeArray.length;
+}
+
 
 window.arrayDataType = arrayDataType;
 window.arrayPokeType = arrayPokeType;
+window.amountOfPokesByType = amountOfPokesByType;

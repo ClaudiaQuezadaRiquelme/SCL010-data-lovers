@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>  
+  <head>
     <!--  El elemento head contiene los metadatos que aportan información extra sobre la página, como su título, descripción, autor, etc. -->
     <!--  Además, puede incluir referencias externas a contenidos necesarios para que el documento se muestre y comporte de manera correcta (como hojas de estilos o scripts) -->
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <meta name="description" content="Guia Básica Para Tu Aventura Pokémon">
     <meta name="keywords" content="pokemon,principiante,guia, kanto">
     <meta name="author" content="Carolina Medina">
@@ -13,8 +13,9 @@
     <title>Data Dex</title>
 
     <link rel="stylesheet" href="style.css" />
-    <!--<link rel="stylesheet" type="text/css"  href="font/Pokemon_Hollow">-->
     <script type="text/javascript" href="app.js"></script>
+    <!--Si no lo ponemos, no reconoce jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -22,26 +23,23 @@
             <h1>DATADEX</h1>
              <h1>Tu Mejor Guía Inicial Para Tu Aventura Pokémon</h1>
             <h2 class="tagline">
-                
+
             </h2>
         </hgroup>
 
 
     <nav>
         <ul>
-            <li><button id="type"><img src=" img/Boton_1.jpg " alt="Tipo" class="Boton_1"></button> </li> 
-            <li><button><img src=" img/Boton_2.jpg " alt="Debilidades" class="Boton_2"> </button> </li>
-            <li><button><img src=" img/Boton_3.jpg " alt="Hora de Aparición" class="Boton_3"> </button></li>
-            <li><button><img src=" img/Boton_4.jpg " alt="Nombre" class="Boton_4"> </button> </li>
+            <li><button id="type"><img src=" img/Boton_1.jpg " alt="Tipo" class="Boton_1"></button> </li>
+            <li><button id="weaknesses"><img src=" img/Boton_2.jpg " alt="Debilidades" class="Boton_2"> </button> </li>
+            <li><button id="spawnTime"><img src=" img/Boton_3.jpg " alt="Hora de Aparición" class="Boton_3"> </button></li>
+            <li><button id="pokeName"><img src=" img/Boton_4.jpg " alt="Nombre" class="Boton_4"> </button> </li>
         </ul>
     </nav>
-
 
  </header>
    
     <section> <!-- intentar hacerdinamico -->
-
-  
               <select class=""  id="select_type">
                   <option value="all">Tipos de Pokémon</option>
                   <option value="Water">Agua</option>
@@ -63,32 +61,18 @@
               <form class="">
                 <input class="barraBusqueda" id="search" type="search" placeholder="Buscar" aria-label="Search">
                 <button class="" id="" type="button">Buscar</button>
-              </form>         
-
-
-
+              </form>
+              <div id="pokes"></div>
     </section>
-    
-<!-- 
-    <script>
-      for (var i = 0;  i<="type"; 0; i++) {
-        document.write
-      }
-
-    </script>
- -->
 
     <footer>
         <p></p>
-        <p><a href="#">Quieres conocer el % de presencia Pokémon</a></p> 
+        <p><a href="#">Quieres conocer el % de presencia Pokémon</a></p>
     </footer>
 
-     
-   
-   
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
-    
+
   </body>
 </html>
