@@ -9,19 +9,31 @@
 	--color-rosapastel: #DEA5A4;
 }
 
+/*.button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  /*transition-duration: 0.4s;*/
 
 
-.botones: hover { /*es un atributo que al posicionar el mouse en el boton este se agranda*/
-	background-color: pink;
+/*.button: hover, 
+.button: focus { es un atributo que al posicionar el mouse en el boton este se agranda
+	background: pink;
+	transform: translateY(4px);
+	border-width:2px;
+	color: white;
 }
-
-#botones {
-	display: flex;
+*/
+.botones {
+	background-color: white;
+	color: black;
+	display: inline;
+	margin: 0px;
 	flex-direction: row;
-	align-content: space-around;
-	justify-content: space-around;
-	align-content: center;
-	padding: 10px 100px 10px 100px;
+	/*align-content: space-around;*/
+	/*justify-content: space-around;*/
+	/*align-content: rig;*/
+	padding: 10px 100px 10px 0px;
+	height: 100px; width: 100px;
+	background-size: 100px 100px;
 }
 
 .card {
@@ -38,12 +50,13 @@
   margin-right: 10px;
 }
 .card img {
-
+/*background-image: url("http://www.serebii.net/pokemongo/pokemon/150.png");
   width: 130px;
   height: 130px;
   align-self: center;
-  margin: 1em;
+  margin: 1em;*/
 }
+
 .card-body{
   width: 200px;
   height: 140px;
@@ -62,51 +75,19 @@
 
 
 
-h1 {
-  font-family: Pokemon_Hollow;
-  font-size: 50px;
-  text-align: center;
-  color: orange;
-}
 
-nav {
-	background-color: orange;
 
-}
-
-nav li{
-	list-style: none;
-	padding: 20px 10px 10px;
-	/*padding-left: : 10px;*/
-
-}
-
-img {
-	/*padding: 10px 10px 10px 10px;*/
-	align-content: stretch;
-	align-content: space-around;
-}
-
-.barraBusqueda{
-	width: 180px;
-	height: 20px;
-	margin-right: 5px;
-}
-
-#select_type, #searchBar, #info{
-	display: none;
-}
-
-/*
-#Boton_1{
+.Boton_1{
 	display: flex;
-	padding: 20px 20px 20px 20px;
-	align-content: stretch;
+	background-size: 100px 100px;
+	/*padding: 20px 20px 20px 20px;*/
+	/*align-content: stretch;*/
 }
 
-#Boton_2{
+.Boton_2{
 	display: flex;
-	padding: 20px 20px 20px 20px;
+	background-size: 100px 100px;
+	/*padding: 20px 20px 20px 20px;*/
 	align-content: stretch;
 }
 
@@ -122,4 +103,58 @@ img {
 	align-content: stretch;
 }
 
-*/
+img {
+	/*padding: 10px 10px 10px 10px;*/
+	align-content: stretch;
+	align-content: space-around;
+}
+
+h1 {
+  font-family: Pokemon_Hollow;
+  font-size: 50px;
+  text-align: center;
+  color: orange;
+}
+
+nav {
+	background-color: orange;
+	display: inline;
+}
+
+nav ul {
+ 	text-decoration: none;
+ 	list-style-type: none;
+ 	margin: 0;
+  	padding: 0;
+  	/*position: relative;*/
+	/*display: inline;*/
+ }
+
+li {
+ 	text-decoration: none;
+ 	margin: 25px 20px 75px 100px;
+ 	/*position: relative;*/
+ 	/*outline-offset: 15px;*/
+ 	/*list-style-type: none;
+ 	margin: 0;
+  	padding: 0;*/
+ 	/*list-style-position: inside;*/
+ 	display: inline;
+ 	padding: 20px 10px 10px; 	
+}
+
+
+.barraBusqueda{
+	width: 180px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+#select_type, #searchBar, #info{
+	display: none;
+}
+
+
+
+
+
