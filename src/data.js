@@ -3,6 +3,7 @@
 // // puedes ver como agregamos la función a nuestro objeto global window
 
 const pokeData = POKEMON.pokemon;
+let pokeTypeSpanish = TYPES.types;
 
 const arrayDataType = (stringType) => {//Función que retorna arreglo con los pokemones del tipo ingresado
   let typeArray = [];//Crear array vacío donde se guardarán pokemones del tipo ingresado.
@@ -53,6 +54,8 @@ const amountOfPokesByType = (stringType) => { //Retorna cantidad de pokemones po
 const pokePercentage = (stringType) => {
   return (100 * amountOfPokesByType(stringType)) / pokeData.length;
 }
+
+
 
 
 window.arrayDataType = arrayDataType;

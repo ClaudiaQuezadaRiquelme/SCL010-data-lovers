@@ -11,7 +11,7 @@ btnType.addEventListener("click", ()=> {
 	});
 });
 
-let dropdownMenuOption = (stringType) => {
+let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUARIO Y ESCRIBE LOS NOMBRES DE POKEMONES DE ESE TIPO
 	let arrayPoke = arrayDataType(stringType);//arreglo de pokes del tipo stringType
 	document.getElementById("pokes").innerHTML="";//limpiar div en caso de que tenga pokes
 	for (let j=0; j<arrayPoke.length; j++) { //recorro el arreglo de pokes
@@ -23,7 +23,8 @@ let dropdownMenuOption = (stringType) => {
 	};
 };
 
-let showPercentage = (stringType) => {
+let showPercentage = (stringType) => {//MOSTRAR PORCENTAJE DE TIPOS POKEMON
+	document.getElementById("info").innerHTML="";//limpiar article en caso de que tenga info
 	let node = document.createElement("DIV");//creo el contenedor <div></div>
 	let textNode = document.createTextNode("El porcentaje de los pokémon tipo "+stringType+ " es "+pokePercentage(stringType));
 	node.appendChild(textNode);//agrego el porcentaje al contenedor <div></div>
