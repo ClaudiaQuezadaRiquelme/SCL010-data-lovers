@@ -3,7 +3,6 @@
 // // puedes ver como agregamos la función a nuestro objeto global window
 
 const pokeData = POKEMON.pokemon;
-let pokeTypeSpanish = TYPES.types;
 
 const arrayDataType = (stringType) => {//Función que retorna arreglo con los pokemones del tipo ingresado
   let typeArray = [];//Crear array vacío donde se guardarán pokemones del tipo ingresado.
@@ -70,9 +69,9 @@ const pokeWeaknesses = (stringPokeName) => {//Retorna string con Weaknesses del 
     } else if (i===0) {//si es la primera debilidad del recorrido
       stringWeaknesses += arrayWeaknesses[i];//la escribe sola
     } else if (i === (arrayWeaknesses.length-1)){//si es la última debilidad del recorrido
-      stringWeaknesses += ("y " + arrayWeaknesses[i]);//concatena con "y "
+      stringWeaknesses += (" y " + arrayWeaknesses[i]);//concatena con "y "
     } else {//si es una debilidad al medio del recorrido
-      stringWeaknesses += (", " + arrayWeaknesses[i] + " ");//concatena con ", " y " "
+      stringWeaknesses += (", " + arrayWeaknesses[i]);//concatena con ", " y " "
     }
   }
   return stringWeaknesses;
@@ -85,3 +84,4 @@ window.amountOfPokesByType = amountOfPokesByType;
 window.pokeData= pokeData;
 window.pokePercentage = pokePercentage;
 window.pokeWeaknesses = pokeWeaknesses;
+window.POKEMON = POKEMON;

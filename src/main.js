@@ -16,7 +16,7 @@ let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUA
 	document.getElementById("pokes").innerHTML="";//limpiar div en caso de que tenga pokes
 	for (let j=0; j<arrayPoke.length; j++) { //recorro el arreglo de pokes
 		let node = document.createElement("DIV");//creo el contenedor <div></div>
-		let textNode = document.createTextNode("Hola, soy "+arrayPoke[j].name + ". Los pokemon tipo"+ pokeWeaknesses(arrayPoke[j].name) + " me hacen mucho daño. Aparezco a las "+ arrayPoke[j].spawn_time);//escribo el nombre del poke en la posición j
+		let textNode = document.createTextNode("Hola, soy "+arrayPoke[j].name + ". Los pokemon tipo "+ pokeWeaknesses(arrayPoke[j].name) + " me hacen mucho daño. Aparezco a las "+ arrayPoke[j].spawn_time);//escribo el nombre del poke en la posición j
 		node.appendChild(textNode);//agrego al poke en el contenedor <div></div>
 		document.getElementById("pokes").appendChild(node);//agrego el nodo al contenedor con id="pokes"
 		node.setAttribute("id", arrayPoke[j].name);//al nodo creado le asigno el id=arrayPoke[j]
@@ -30,3 +30,5 @@ let showPercentage = (stringType) => {//MOSTRAR PORCENTAJE DE TIPOS POKEMON
 	node.appendChild(textNode);//agrego el porcentaje al contenedor <div></div>
 	document.getElementById("info").appendChild(node);//agrego el nodo al article con id="info"
 }
+
+window.POKEMON = POKEMON;
