@@ -55,7 +55,28 @@ const pokePercentage = (stringType) => {
   return (100 * amountOfPokesByType(stringType)) / pokeData.length;
 }
 
-
+const pokeWeaknesses = (stringPokeName) => {//Retorna string con Weaknesses del poke. Recibe el nombre del poke del cual queremos conocer sus debilidades.
+  let arrayWeaknesses = [];
+  let stringWeaknesses = "";
+  for (let i=0; i<pokeData.length; i++) {//recorro el array de todos los pokes
+    if (stringPokeName === pokeData[i].name) {//busco al poke que me interesa
+      arrayWeaknesses = pokeData[i].weaknesses;//y guardo su arreglo de debilidades
+    }
+  }
+  for (let i=0; i<arrayWeaknesses.length; i++) {//recorro el arreglo de debilidades del poke que me interesa para escribir el stringWeaknesses
+    if (arrayWeaknesses.length === 1){//si tiene 1 debilidad sola
+      stringWeaknesses += arrayWeaknesses[i];//la escribe sola
+      //si tiene 2 o más debilidades:
+    } else if (i===0) {//si es la primera debilidad del recorrido
+      stringWeaknesses += arrayWeaknesses[i];//la escribe sola
+    } else if (i === (arrayWeaknesses.length-1)){//si es la última debilidad del recorrido
+      stringWeaknesses += ("y " + arrayWeaknesses[i]);//concatena con "y "
+    } else {//si es una debilidad al medio del recorrido
+      stringWeaknesses += (", " + arrayWeaknesses[i] + " ");//concatena con ", " y " "
+    }
+  }
+  return stringWeaknesses;
+}
 
 
 window.arrayDataType = arrayDataType;
@@ -63,3 +84,4 @@ window.arrayPokeType = arrayPokeType;
 window.amountOfPokesByType = amountOfPokesByType;
 window.pokeData= pokeData;
 window.pokePercentage = pokePercentage;
+window.pokeWeaknesses = pokeWeaknesses;
