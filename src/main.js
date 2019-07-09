@@ -26,7 +26,7 @@ let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUA
 let showPercentage = (stringType) => {//MOSTRAR PORCENTAJE DE TIPOS POKEMON
 	document.getElementById("info").innerHTML="";//limpiar article en caso de que tenga info
 	let node = document.createElement("DIV");//creo el contenedor <div></div>
-	let textNode = document.createTextNode("El porcentaje de los pokémon tipo "+stringType+ " es "+pokePercentage(stringType));
+	let textNode = document.createTextNode("El porcentaje de los pokémon tipo "+stringType+ " es "+pokePercentage(stringType).toFixed(2));
 	node.appendChild(textNode);//agrego el porcentaje al contenedor <div></div>
 	document.getElementById("info").appendChild(node);//agrego el nodo al article con id="info"
 }
