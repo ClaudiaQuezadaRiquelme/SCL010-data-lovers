@@ -30,29 +30,6 @@ let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUA
 		node.appendChild(textNode);
 		node.appendChild(document.createElement("br"));
 
-		textNode = document.createTextNode("name: "+arrayPoke[j].name);
-		node.appendChild(textNode);
-		node.appendChild(document.createElement("br"));
-
-		textNode = document.createTextNode("num: " + arrayPoke[j].num + "");
-		node.appendChild(textNode);
-		node.appendChild(document.createElement("br"));
-
-		textNode = document.createTextNode("type: "+arrayPoke[j].type);
-		node.appendChild(textNode);
-		node.appendChild(document.createElement("br"));
-
-		textNode = document.createTextNode("height: "+arrayPoke[j].height + "");
-		node.appendChild(textNode);
-		node.appendChild(document.createElement("br"));
-
-		textNode = document.createTextNode("weight: "+arrayPoke[j].weight + "");
-		node.appendChild(textNode);
-		node.appendChild(document.createElement("br"));
-
-		textNode = document.createTextNode("altura: "+ arrayPoke[j].height);
-		node.appendChild(textNode);
-
 		textNode = document.createTextNode("Nombre: "+arrayPoke[j].name);
 		node.appendChild(textNode);		
 		node.appendChild(document.createElement("br"));
