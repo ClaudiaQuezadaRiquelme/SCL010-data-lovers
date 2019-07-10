@@ -1,7 +1,7 @@
 // /* Manejo de data */
 // // esta es una función de ejemplo
 // // puedes ver como agregamos la función a nuestro objeto global window
-
+window.data 
 const pokeData = window.POKEMON.pokemon;
 //var arrayDataType = [];
 
@@ -16,7 +16,7 @@ const arrayDataType = (stringType) => {//Función que retorna arreglo con los po
   }
   return typeArray;
  };
-
+ 
 const arrayPokeType = () => {
   var ArrayType = []; //Array vacío donde guardaremos los tipos de pokemon
 
