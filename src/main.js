@@ -10,7 +10,7 @@ btnType.addEventListener("click", ()=> {
 		document.getElementById("info").style.display = "block";
 	  dropdownMenuOption(document.getElementById("select_type").value);//toma el valor elegido en el menú desplegable. Ej.: "Fire"
 	});
-	
+
 });
 
 let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUARIO Y ESCRIBE LOS NOMBRES DE POKEMONES DE ESE TIPO
@@ -31,27 +31,27 @@ let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUA
 		node.appendChild(document.createElement("br"));
 
 		textNode = document.createTextNode("Nombre: "+arrayPoke[j].name);
-		node.appendChild(textNode);		
+		node.appendChild(textNode);
 		node.appendChild(document.createElement("br"));
 
 		textNode = document.createTextNode("Numero: " + arrayPoke[j].num + "");
-		node.appendChild(textNode);		
+		node.appendChild(textNode);
 		node.appendChild(document.createElement("br"));
 
 		textNode = document.createTextNode("Tipo: "+arrayPoke[j].type);
-		node.appendChild(textNode);		
+		node.appendChild(textNode);
 		node.appendChild(document.createElement("br"));
 
 		textNode = document.createTextNode("Altura: "+arrayPoke[j].height + "");
-		node.appendChild(textNode);		
+		node.appendChild(textNode);
 		node.appendChild(document.createElement("br"));
 
 		textNode = document.createTextNode("Peso: "+arrayPoke[j].weight + "");
-		node.appendChild(textNode);		
+		node.appendChild(textNode);
 		node.appendChild(document.createElement("br"));
-		
+
 		textNode = document.createTextNode("Huevos: "+ arrayPoke[j].egg + "");
-		node.appendChild(textNode);	
+		node.appendChild(textNode);
 		node.appendChild(document.createElement("br"));
 
 		document.getElementById("pokes").appendChild(node);//agrego el nodo al contenedor con id="pokes"
