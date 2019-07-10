@@ -2,7 +2,7 @@
 // // esta es una función de ejemplo
 // // puedes ver como agregamos la función a nuestro objeto global window
 
-const pokeData = POKEMON.pokemon;
+const pokeData = window.POKEMON.pokemon;
 
 const arrayDataType = (stringType) => {//Función que retorna arreglo con los pokemones del tipo ingresado
   let typeArray = [];//Crear array vacío donde se guardarán pokemones del tipo ingresado.
@@ -17,7 +17,7 @@ const arrayDataType = (stringType) => {//Función que retorna arreglo con los po
  };
 
 const arrayPokeType = () => {
-  ArrayType = []; //Array vacío donde guardaremos los tipos de pokemon
+  let ArrayType = []; //Array vacío donde guardaremos los tipos de pokemon
 
   for(let i=0; i < pokeData.length; i++) {//recorremos el arreglo de pokes
 
@@ -84,4 +84,3 @@ window.amountOfPokesByType = amountOfPokesByType;
 window.pokeData= pokeData;
 window.pokePercentage = pokePercentage;
 window.pokeWeaknesses = pokeWeaknesses;
-window.POKEMON = POKEMON;

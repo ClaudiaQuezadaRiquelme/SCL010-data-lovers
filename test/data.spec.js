@@ -11,7 +11,7 @@ describe('arrayDataType', () => {
   });
 
   it('debería retornar "object"', () => {
-    assert.equal(arrayDataType("Grass"), 'object');
+    assert.equal(typeof arrayDataType("Grass"), 'object');
   });
 });
 
@@ -22,7 +22,7 @@ describe('arrayPokeType', () => {
   });
 
   it('debería retornar "object"', () => {
-    assert.equal(arrayPokeType(), 'object');
+    assert.equal(typeof arrayPokeType(), 'object');
   });
 });
 
@@ -33,7 +33,7 @@ describe('amountOfPokesByType', () => {
   });
 
   it('debería retornar "number"', () => {
-    assert.equal(amountOfPokesByType("Grass"), 'number');
+    assert.equal(typeof amountOfPokesByType("Grass"), 'number');
   });
 });
 
@@ -51,7 +51,7 @@ describe('pokePercentage', () => {
   });
 
   it('debería retornar "number"', () => {
-    assert.equal(pokePercentage("Grass"), 'number');
+    assert.equal(typeof pokePercentage("Grass"), 'number');
   });
 });
 
@@ -62,6 +62,6 @@ describe('pokeWeaknesses', () => {
   });
 
   it('debería retornar "string"', () => {
-    assert.equal(pokeWeaknesses("Victreebel"), 'string');
+    assert.equal(typeof pokeWeaknesses("Victreebel"), 'string');
   });
 });
