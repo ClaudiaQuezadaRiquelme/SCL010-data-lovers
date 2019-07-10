@@ -28,27 +28,27 @@ let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUA
 		node.appendChild(textNode);		
 		node.appendChild(document.createElement("br"));
 
-		textNode = document.createTextNode("name: "+arrayPoke[j].name);
+		textNode = document.createTextNode("Nombre: "+arrayPoke[j].name);
 		node.appendChild(textNode);		
 		node.appendChild(document.createElement("br"));
 
-		textNode = document.createTextNode("num: " + arrayPoke[j].num + "");
+		textNode = document.createTextNode("Numero: " + arrayPoke[j].num + "");
 		node.appendChild(textNode);		
 		node.appendChild(document.createElement("br"));
 
-		textNode = document.createTextNode("type: "+arrayPoke[j].type);
+		textNode = document.createTextNode("Tipo: "+arrayPoke[j].type);
 		node.appendChild(textNode);		
 		node.appendChild(document.createElement("br"));
 
-		textNode = document.createTextNode("height: "+arrayPoke[j].height + "");
+		textNode = document.createTextNode("Altura: "+arrayPoke[j].height + "");
 		node.appendChild(textNode);		
 		node.appendChild(document.createElement("br"));
 
-		textNode = document.createTextNode("weight: "+arrayPoke[j].weight + "");
+		textNode = document.createTextNode("Peso: "+arrayPoke[j].weight + "");
 		node.appendChild(textNode);		
 		node.appendChild(document.createElement("br"));
 		
-		textNode = document.createTextNode("altura: "+ arrayPoke[j].height);
+		textNode = document.createTextNode("Huevos: "+ arrayPoke[j].egg + "");
 		node.appendChild(textNode);	
 		node.appendChild(document.createElement("br"));
 	
