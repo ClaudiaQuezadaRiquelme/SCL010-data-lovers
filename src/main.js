@@ -30,7 +30,6 @@ let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUA
 		node.appendChild(textNode);
 		node.appendChild(document.createElement("br"));
 
-<<<<<<< HEAD
 		textNode = document.createTextNode("name: "+arrayPoke[j].name);
 		node.appendChild(textNode);
 		node.appendChild(document.createElement("br"));
@@ -53,7 +52,7 @@ let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUA
 
 		textNode = document.createTextNode("altura: "+ arrayPoke[j].height);
 		node.appendChild(textNode);
-=======
+
 		textNode = document.createTextNode("Nombre: "+arrayPoke[j].name);
 		node.appendChild(textNode);		
 		node.appendChild(document.createElement("br"));
@@ -76,7 +75,6 @@ let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUA
 		
 		textNode = document.createTextNode("Huevos: "+ arrayPoke[j].egg + "");
 		node.appendChild(textNode);	
->>>>>>> cambia nombre de las variables
 		node.appendChild(document.createElement("br"));
 
 		document.getElementById("pokes").appendChild(node);//agrego el nodo al contenedor con id="pokes"
