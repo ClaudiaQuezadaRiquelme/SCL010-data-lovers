@@ -1,12 +1,17 @@
 // /* Manejo de data */
 // // esta es una función de ejemplo
 // // puedes ver como agregamos la función a nuestro objeto global window
-window.data 
 const pokeData = window.POKEMON.pokemon;
-//var arrayDataType = [];
 
-const arrayDataType = (stringType) => {//Función que retorna arreglo con los pokemones del tipo ingresado
-  var typeArray = [];//Crear array vacío donde se guardarán pokemones del tipo ingresado.
+
+// var arrayDataType = [];
+// var pokePercentage = ;
+
+window.pokeObject = {
+
+
+arrayDataType: (stringType) => {//Función que retorna arreglo con los pokemones del tipo ingresado
+  let typeArray = [];//Crear array vacío donde se guardarán pokemones del tipo ingresado.
   for (let i=0; i<pokeData.length; i++) { //recorrer arreglo de pokemones y guardar pokemones en array vacio
     for(let x=0; x<pokeData[i].type.length; x++) {// recorre el arreglo de tipos de cada pokemon para saber cuál guardar.
       if (!(pokeData[i].type[x].localeCompare(stringType))) {//si el pokemon es del tipo ingresado,
@@ -15,47 +20,19 @@ const arrayDataType = (stringType) => {//Función que retorna arreglo con los po
     }
   }
   return typeArray;
- };
+ },
  
-const arrayPokeType = () => {
-  var ArrayType = []; //Array vacío donde guardaremos los tipos de pokemon
 
-  for(let i=0; i < pokeData.length; i++) {//recorremos el arreglo de pokes
-
-    if (ArrayType.length === 0){ //si el arreglo de tipos ya está vacío
-    ArrayType.push(pokeData[i].type[0]); //guarda el primer tipo de ese pokemon en el arreglo de tipos
-  }
-    else { //si el arreglo de tipos no está vacío
-      for (let x=0; x < pokeData[i].type.length; x++) { //recorremos el arreglo de tipos del pokemon
-        let count = 0; //contador que nos ayudará a reconocer cuando guardar el tipo en el arreglo de tipos sin que se repitan.
-
-        for (let z=0; z < ArrayType.length; z++) { //recorremos el arreglo de tipos
-          if (!(pokeData[i].type[x].localeCompare(ArrayType[z]))) {//si el tipo del pokemon es igual a un tipo del arreglo de tipos
-            continue; //continuar
-          }
-          else {
-            count++; //si no, aumenta el contador
-            if (count == ArrayType.length) { //si el contador es igual al largo del arreglo de tipos, significa que el tipo del pokemon no se ha guardado en el arreglo de tipos, por lo tanto, lo tenemos que guardar
-              ArrayType.push(pokeData[i].type[x]);//guarda el tipo de ese pokemon en el arreglo de tipos
-            }
-          }
-        }
-      }
-    }
-  }
-  return ArrayType;
-}
-
-const amountOfPokesByType = (stringType) => { //Retorna cantidad de pokemones por tipo indicado en stringType
-  let typeArray = arrayDataType(stringType);
+amountOfPokesByType: (stringType) => { //Retorna cantidad de pokemones por tipo indicado en stringType
+  let typeArray = window.pokeObject.arrayDataType(stringType);
   return typeArray.length;
-}
+},
 
-const pokePercentage = (stringType) => {
-  return (100 * amountOfPokesByType(stringType)) / pokeData.length;
-}
+pokePercentage: (stringType) => {
+  return (100 * window.pokeObject.amountOfPokesByType(stringType)) / pokeData.length;
+},
 
-const pokeWeaknesses = (stringPokeName) => {//Retorna string con Weaknesses del poke. Recibe el nombre del poke del cual queremos conocer sus debilidades.
+pokeWeaknesses: (stringPokeName) => {//Retorna string con Weaknesses del poke. Recibe el nombre del poke del cual queremos conocer sus debilidades.
   let arrayWeaknesses = [];
   let stringWeaknesses = "";
   for (let i=0; i<pokeData.length; i++) {//recorro el array de todos los pokes
@@ -79,9 +56,31 @@ const pokeWeaknesses = (stringPokeName) => {//Retorna string con Weaknesses del 
 }
 
 
-window.arrayDataType = arrayDataType;
-window.arrayPokeType = arrayPokeType;
-window.amountOfPokesByType = amountOfPokesByType;
+}
+
+
+
+// window.arrayDataType = arrayDataType;
+// window.arrayPokeType = arrayPokeType;
+// window.amountOfPokesByType = amountOfPokesByType;
 window.pokeData= pokeData;
-window.pokePercentage = pokePercentage;
-window.pokeWeaknesses = pokeWeaknesses;
+// window.pokePercentage = pokePercentage;
+// window.pokeWeaknesses = pokeWeaknesses;
+
+// {
+//   "env": {
+//     "browser": true
+//   },
+//   "parserOptions": {
+//     "ecmaVersion": 6
+//   },
+//   "extends": "eslint:recommended",
+//   "globals": {
+//     "pokeData": false,
+//     "arrayDataType": false,
+//     "pokeWeaknesses": false,
+//     "pokePercentage": false, 
+//     "amountOfPokesByType": false,
+//     "pokeObject": false, 
+//   }
+// }

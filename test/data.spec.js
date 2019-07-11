@@ -1,71 +1,63 @@
 global.window = global;
 global.assert = require('chai').assert;
+global.pokeData = global;
 require('../src/data');
 require('./data.spec.js');
-var arrayDataType = [];
-var amountOfPokesByType = 0;
-var pokePercentage = 0.0;
-var pokeWeaknesses = "";
-var arrayPokeType = "";
+// var arrayDataType = [];
+// var amountOfPokesByType = 0;
+// var pokePercentage = 0.0;
+// var pokeWeaknesses = "";
+// var arrayPokeType = "";
 
-describe('arrayDataType', () => {
+describe("window.pokeObject.arrayDataType", () => {
 
   it('debería ser una función', () => {
-    assert.equal(typeof arrayDataType, 'function');
+    assert.equal(typeof window.pokeObject.arrayDataType, 'function');
   });
 
   it('debería retornar "object"', () => {
-    assert.equal(typeof arrayDataType("Grass"), 'object');
+    assert.equal(typeof window.pokeObject.arrayDataType("Grass"), 'object');
   });
 });
 
-describe('arrayPokeType', () => {
+
+
+describe('window.pokeObject.amountOfPokesByType', () => {
 
   it('debería ser una función', () => {
-    assert.equal(typeof arrayPokeType, 'function');
-  });
-
-  it('debería retornar "object"', () => {
-    assert.equal(typeof arrayPokeType(), 'object');
-  });
-});
-
-describe('amountOfPokesByType', () => {
-
-  it('debería ser una función', () => {
-    assert.equal(typeof amountOfPokesByType, 'function');
+    assert.equal(typeof window.pokeObject.amountOfPokesByType, 'function');
   });
 
   it('debería retornar "number"', () => {
-    assert.equal(typeof amountOfPokesByType("Grass"), 'number');
+    assert.equal(typeof window.pokeObject.amountOfPokesByType("Grass"), 'number');
   });
 });
 
-describe('pokeData', () => {
+describe('window.pokeData', () => {
 
   it('debería ser un objeto', () => {
-    assert.equal(typeof pokeData, 'object');
+    assert.equal(typeof window.pokeData, 'object');
   });
 });
 
-describe('pokePercentage', () => {
+describe('window.pokeObject.pokePercentage', () => {
 
   it('debería ser una función', () => {
-    assert.equal(typeof pokePercentage, 'function');
+    assert.equal(typeof window.pokeObject.pokePercentage, 'function');
   });
 
   it('debería retornar "number"', () => {
-    assert.equal(typeof pokePercentage("Grass"), 'number');
+    assert.equal(typeof window.pokeObject.pokePercentage("Grass"), 'number');
   });
 });
 
-describe('pokeWeaknesses', () => {
+describe('window.pokeObject.pokeWeaknesses', () => {
 
   it('debería ser una función', () => {
-    assert.equal(typeof pokeWeaknesses, 'function');
+    assert.equal(typeof window.pokeObject.pokeWeaknesses, 'function');
   });
 
   it('debería retornar "string"', () => {
-    assert.equal(typeof pokeWeaknesses("Victreebel"), 'string');
+    assert.equal(typeof window.pokeObject.pokeWeaknesses("Victreebel"), 'string');
   });
 });
