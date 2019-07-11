@@ -3,9 +3,10 @@
 // // puedes ver como agregamos la función a nuestro objeto global window
 
 const pokeData = window.POKEMON.pokemon;
+//var arrayDataType = [];
 
 const arrayDataType = (stringType) => {//Función que retorna arreglo con los pokemones del tipo ingresado
-  let typeArray = [];//Crear array vacío donde se guardarán pokemones del tipo ingresado.
+  var typeArray = [];//Crear array vacío donde se guardarán pokemones del tipo ingresado.
   for (let i=0; i<pokeData.length; i++) { //recorrer arreglo de pokemones y guardar pokemones en array vacio
     for(let x=0; x<pokeData[i].type.length; x++) {// recorre el arreglo de tipos de cada pokemon para saber cuál guardar.
       if (!(pokeData[i].type[x].localeCompare(stringType))) {//si el pokemon es del tipo ingresado,
@@ -17,7 +18,7 @@ const arrayDataType = (stringType) => {//Función que retorna arreglo con los po
  };
 
 const arrayPokeType = () => {
-  let ArrayType = []; //Array vacío donde guardaremos los tipos de pokemon
+  var ArrayType = []; //Array vacío donde guardaremos los tipos de pokemon
 
   for(let i=0; i < pokeData.length; i++) {//recorremos el arreglo de pokes
 
