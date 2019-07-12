@@ -20,14 +20,6 @@ y IPhone. A diferencia del juego de consolas portátiles, Pokemon Go permite
 llevar la aventura al mundo real, animando al jugador a recorrer los lugares
 que habita y frecuenta.
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
-
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario.
-
 ## **2. Resumen del proyecto**
 
 En este proyecto **construímos una _página web_ para visualizar _Datos Pokémon_**
@@ -42,7 +34,7 @@ Trabajamos con esta data:
   En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
   junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](https://pokemongolive.com).
 
-Nuestra página web que permite **visualizar la data,filtrarla por tipo y mostrar
+Nuestra página web que permite **visualizar la data, filtrarla por tipo y mostrar
 el promedio de pokémones elegidos en relación con el total**. 
 
 ## **3. Etapas del Proyecto**
@@ -53,7 +45,7 @@ _Cómo fue el proceso de diseño y cómo creemos que el producto resuelve
 el problema (o problemas) que de nuestro usuario._
 
 En primer lugar consideramos un diseño de interfaz que tuviera los requerimientos
-mínimos para que se visualice sin dudas que se trata de una página relacionada
+mínimos para que se visualice sin dudas de que se trata de una página relacionada
 con Pokemon y con botones que permiten buscar datos importantes de interés para
 un jugador principiante.
 
@@ -69,6 +61,11 @@ dentro de Pokémon GO está conocer las horas de aparición: si a un jugador
 principiante le llama la atención algún pokémos que fue de su agrado, querrá saber
 a qué hora lo puede encontrar para capturarlo.
 
+Finalmente, para mejorar la experiencia de usuario desarrollamos la plataforma de 
+forma ludica y colorida pensando en que nuestra historia de usuario esta dirigida 
+a usuarios principiantes que recien se esten integrando al mundo pokemon y desean 
+conocer los datos duros para iniciarse en Pokémon GO.
+
 ### **3.2 Historia de usuario**
 
 _Yo como jugador niño de Pokemon Go quiero buscar a los Pokémon por Tipo para
@@ -78,7 +75,6 @@ conocer sus características._
 
 #### Prototipo de baja fidelidad
 
--Sketches (boceto) de tu solución usando papel y lápiz._
 Se enlistarán las carpetas guardadas en SCL010-data-lovers/imagenesReadme/ para
 describir el proceso de creación del boceto y de corrección gracias a los
 testeos.
