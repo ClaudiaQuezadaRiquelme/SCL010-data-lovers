@@ -23,10 +23,7 @@ let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUA
 		let arrayPoke = window.pokeObject.arrayDataType(stringType);//arreglo de pokes del tipo stringType
 		document.getElementById("pokes").innerHTML="";//limpiar div en caso de que tenga pokes
 		for (let j=0; j<arrayPoke.length; j++) { //recorro el arreglo de pokes
-		let node2 = document.createElement("div")
-		//document.getElementById("div").className = "bigContenedor3";
-		//document.getElementById("myDIV").className = "mystyle";
-		let node = document.createElement("li");//creo el contenedor <div></div>
+		let node = document.createElement("DIV");//creo el contenedor <div></div>
 
 		//let node2 = document.createElement("DIV");
 		//let textNode = document.createTextNode("Hola, soy "+arrayPoke[j].name + ". Los pokemon tipo "+ pokeWeaknesses(arrayPoke[j].name) + " me hacen mucho daño. Aparezco a las "+ arrayPoke[j].spawn_time);//escribo el nombre del poke en la posición j
@@ -35,7 +32,11 @@ let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUA
 		img.src=arrayPoke[j].img;
 		img.id="picture"
 		node.appendChild(img);
-		
+		let phrase = document.createElement("P");
+			phrase.id="phrase"+arrayPoke[j].name;
+		let textPhrase = document.createTextNode("Hola, soy "+arrayPoke[j].name + ". Los pokemon tipo "+ window.pokeObject.pokeWeaknesses(arrayPoke[j].name) + " me hacen mucho daño. Aparezco a las "+ arrayPoke[j].spawn_time);//escribo el nombre del poke
+		phrase.appendChild(textPhrase);
+		node.appendChild(phrase);
 		node.appendChild(document.createElement("br"));
 
 		let textNode = document.createTextNode("id: "+arrayPoke[j].id);
@@ -66,19 +67,8 @@ let dropdownMenuOption = (stringType) => {//RECONOCE EL TIPO ELEGIDO POR EL USUA
 		node.appendChild(textNode);
 		node.appendChild(document.createElement("br"));
 
-		let phrase = document.createElement("P");
-			phrase.id="phrase"+arrayPoke[j].name;
-		let textPhrase = document.createTextNode("Hola, soy "+arrayPoke[j].name + ". Los pokemon tipo "+ window.pokeObject.pokeWeaknesses(arrayPoke[j].name) + " me hacen mucho daño. Aparezco a las "+ arrayPoke[j].spawn_time);//escribo el nombre del poke
-		phrase.appendChild(textPhrase);
-		node.appendChild(phrase);
-		node.appendChild(document.createElement("br"));
-
-		node2.appendChild(node);
-
-
-		document.getElementById("pokes").appendChild(node2);//agrego el nodo al contenedor con id="pokes"
-		//document.getElementById("div").className = "bigContenedor3";
-		node2.setAttribute("id", arrayPoke[j].name);//al nodo creado le asigno el id=arrayPoke[j]
+		document.getElementById("pokes").appendChild(node);//agrego el nodo al contenedor con id="pokes"
+		node.setAttribute("id", arrayPoke[j].name);//al nodo creado le asigno el id=arrayPoke[j]
 
     //node2.appendChild(node);
 		//document.appendChild(node2);
