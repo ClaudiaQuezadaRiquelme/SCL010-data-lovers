@@ -3,11 +3,6 @@ global.assert = require('chai').assert;
 global.pokeData = global;
 require('../src/data');
 require('./data.spec.js');
-// var arrayDataType = [];
-// var amountOfPokesByType = 0;
-// var pokePercentage = 0.0;
-// var pokeWeaknesses = "";
-// var arrayPokeType = "";
 
 describe("window.pokeObject.arrayDataType", () => {
 
@@ -19,8 +14,6 @@ describe("window.pokeObject.arrayDataType", () => {
     assert.equal(typeof window.pokeObject.arrayDataType("Grass"), 'object');
   });
 });
-
-
 
 describe('window.pokeObject.amountOfPokesByType', () => {
 

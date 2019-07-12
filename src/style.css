@@ -1,34 +1,14 @@
-
-
 @font-face {
 	font-family: "Pokemon_Hollow";
 	color: #ff8000;
 	src:url("font/Pokemon_Hollow.ttf");
 }
 
-
-/*.button {
-  -webkit-transition-duration: 0.4s; /* Safari */
-  /*transition-duration: 0.4s;*/
-
-
-/*.button: hover, 
-.button: focus { es un atributo que al posicionar el mouse en el boton este se agranda
-	background: pink;
-	transform: translateY(4px);
-	border-width:2px;
-	color: white;
-}
-*/
 .botones {
 	
 	display: inline;
 	margin: 0px;
 	flex-direction: row;
-	/*align-content: space-around;*/
-	/*justify-content: space-around;*/
-	/*align-content: rig;*/
-	/*padding: 0px 10px 0px 10px;*/
 	height: 220px; width: 220px;
 	background-size: 200px 200px;
 	margin-top: 20px;
@@ -49,11 +29,6 @@
   margin-right: 10px;
 }
 .card img {
-/*background-image: url("http://www.serebii.net/pokemongo/pokemon/150.png");
-  width: 130px;
-  height: 130px;
-  align-self: center;
-  margin: 1em;*/
 }
 
  div {
@@ -61,14 +36,9 @@
 	height: 350px; 
 	width: 300px;
 	background-size: 350px 300px;
-	
 	border: 5px solid black;
 	background: url(https://i.pinimg.com/originals/dc/92/80/dc9280d6d991e4dfdaff0b16bf4764f8.jpg);
-	/*background-repeat: repeat-y;*/
-	/*background-repeat: repeat-x;*/
 	color: white;
-	/*flex-direction: row;*/
-	/*display: inline;*/
 }
 
 article .bigContenedor{
@@ -80,18 +50,6 @@ article .bigContenedor{
   	display: block;
 }
 
-
-
-/*section img {
-	display: inline;
-	
-	background-image: url(https://i.pinimg.com/originals/dc/92/80/dc9280d6d991e4dfdaff0b16bf4764f8.jpg);
-	
-	flex-direction: row;
-}
-*/
-
-
 .phraseColor{
 background-color: : #ff8000;
 }
@@ -101,36 +59,21 @@ body {
 	background-color: #FFDE36;
 }
 
-
-
-/*
-#body {
-	text-decoration: Pokemon_Hollow;
-}*/
-
-
-
-
-
 .Boton_1{
 	display: flex;
 	background-size: 200px 200px;
 	height: 200px; width: 200px;
-	/*padding: 20px 20px 20px 20px;*/
-	/*align-content: stretch;*/
 }
 
 .Boton_2{
 	display: flex;
 	background-size: 200px 200px;
 	height: 200px; width: 200px;
-	/*padding: 20px 20px 20px 20px;*/
 	align-content: stretch;
 }
 
 .Boton_3{
 	display: flex;
-	/*padding: 20px 20px 20px 20px;*/
 	background-size: 200px 200px;
 	height: 200px; width: 200px;
 	align-content: stretch;
@@ -140,12 +83,10 @@ body {
 	display: flex;
 	background-size: 200px 200px;
 	height: 200px; width: 200px;
-	/*padding: 30px 30px 30px 30px;*/
 	align-content: stretch;
 }
 
 img {
-	/*padding: 10px 10px 10px 10px;*/
 	align-content: stretch;
 	align-content: space-around;
 }
@@ -168,19 +109,11 @@ nav ul {
  	margin: 100px;
   	padding: 0;
   	background-color: #ff8000;
-  	/*position: relative;*/
-	/*display: inline;*/
  }
 
 li {
  	text-decoration: none;
  	margin: 25px 20px 75px 20px;
- 	/*position: relative;*/
- 	/*outline-offset: 15px;*/
- 	/*list-style-type: none;
- 	margin: 0;
-  	padding: 0;*/
- 	/*list-style-position: inside;*/
  	display: inline;
  	padding: 20px 10px 10px; 	
 }
