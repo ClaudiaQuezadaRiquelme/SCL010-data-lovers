@@ -86,6 +86,12 @@ replanteamos la estadística. También elaboramos preguntas para una futura
 entrevista con algún conocedor de Pokémon. Como primer paso, buscamos
 conocer a alguien ligado a Pokémon, no necesariamente ligado a Pokémon GO.
 
+[P1-Imagen1](https://drive.google.com/file/d/1MInbGsntVEakCjfGHxJDXHiJcodnh1-q/view?usp=sharing)
+[P1-Imagen2](https://drive.google.com/file/d/1UOTW9caKWI4qNWX0jThr_teAaI-LuxN7/view?usp=sharing)
+[P1-Imagen3](https://drive.google.com/file/d/1YnNmYhKEnzsU0gTEQLWCHW11n8fMF1J2/view?usp=sharing)
+[P1-Imagen4](https://drive.google.com/file/d/1nIuKZy8f9dIXiWxNJUAzn3CH1DygsboW/view?usp=sharing)
+[P1-Imagen5](https://drive.google.com/file/d/10Z7ex3DV2-R7o7-0pDB64u1dTiRQSA7W/view?usp=sharing)
+
 _Escuchar entrevista a Hector Quezada por Claudia Quezada en 
 [Este link](https://drive.google.com/file/d/1-F7GASr8x-SAVMn6RdiJhWnXOzWHE345/view?usp=sharing)_
 
@@ -96,6 +102,10 @@ Construímos este prototipo considerando que podría ser importande buscar
 datos acerca de los candies, ya que es un elemento propio de Pokémon GO y
 son indispensables para mejoras en tus pokémon.
 
+[P2-Imagen1](https://drive.google.com/file/d/1AO-6q5e0zN10lmMhA6XRuYHbkXR7JM4E/view?usp=sharing)
+[P2-Imagen2](https://drive.google.com/file/d/1u_p8VtVa7HaasvsVCW9TdwMkkR9zzlMi/view?usp=sharing)
+
+
 * Prototipo3: Tras recibir feedback, consideramos importante testear nuestro 
 prototipo con alguna persona desconocida que nos permita conocer qué efectos 
 tiene nuestro prototipo en un usuario que no tiene lazos afectivos con nosotras.
@@ -103,6 +113,10 @@ También descubrimos que más importante que los candies son la hora de aparici�
 del pokémon, ya que el usuario principiante al indagar un poco en los tipos de
 pokémon, querrá saber a qué hora conviene buscarlos si se interesa especialmente
 en alguno.
+
+[P3-Imagen1](https://drive.google.com/file/d/1EgEvhJxsUq7reDMUI5dBFIkIlPoSbrYO/view?usp=sharing)
+[P3-Imagen2](https://drive.google.com/file/d/1PnqgY9ygeh_QOXI_HCsD-F2_hDyf3SdA/view?usp=sharing)
+
 
 _Testeo de Carolina Medina_
 Este testeo no fue grabado. Carolina llevó el Prototipo2 a personas que
@@ -124,6 +138,9 @@ Tenerlo a la vista mejora su experiencia.
 agregando el feedback obtenido en el testeo. Se pueden observar en las imágenes
 en carpeta las observaciones.
 
+[P4-Imagen1](https://drive.google.com/file/d/1_mPdHCkd-Z2U5QD4Lvj3sXqNdlRZmAX2/view?usp=sharing)
+[P4-Imagen2](https://drive.google.com/file/d/1uwdb6AXAIcAv7SpMEycPQDvB_LylSFEF/view?usp=sharing)
+
 * Prototipo5: Prototipo definitivo utilizado para construir nuestra página.
 Como error se puede reconocer que no tiene considerada la estadística. Tras
 obtener feedback con una de las coach, comprendimos que debe ubicarse en una
@@ -132,6 +149,11 @@ está al pie de página, el usuario va a encontrar el Pokémon por tipo que le
 interesa posiblemente al medio de los pokémon que se desplegaron y no va a ver
 nunca la estadística interesante. Decidimos posicionar la estadística debajo del
 menú desplegable de tipos.
+
+[P5-Imagen1](https://drive.google.com/file/d/1sr9y9z5y6ousncKGtOaGF5yI8lNO3CtS/view?usp=sharing)
+[P5-Imagen2](https://drive.google.com/file/d/1eH7QY3F0etUNt40jEvRraj3LJ9yeJjRc/view?usp=sharing)
+[P5-Imagen3](https://drive.google.com/file/d/1g87ey-4fHEwuZeqZTBmiQEdEtEVu146Y/view?usp=sharing)
+[P5-Imagen4](https://drive.google.com/file/d/1HYuBk739_P8o5F1qceBlmdYNNsl2x69V/view?usp=sharing)
 
 #### Prototipo de alta fidelidad
 
