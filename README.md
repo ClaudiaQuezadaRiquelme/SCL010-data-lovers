@@ -79,7 +79,7 @@ conocer sus características._
 #### Prototipo de baja fidelidad
 
 -Sketches (boceto) de tu solución usando papel y lápiz._
-Se enlistarán las carpetas guardadas en SCL010-data-lovers/readmeImg/ para
+Se enlistarán las carpetas guardadas en SCL010-data-lovers/imagenesReadme/ para
 describir el proceso de creación del boceto y de corrección gracias a los
 testeos.
 
@@ -91,7 +91,7 @@ entrevista con algún conocedor de Pokémon. Como primer paso, buscamos
 conocer a alguien ligado a Pokémon, no necesariamente ligado a Pokémon GO.
 
 _Escuchar entrevista a Hector Quezada por Claudia Quezada en 
-SCL010-data-lovers/readmeImg/entrevistaHectorQuezada.flac_
+[Entrevista a Hector Quezada por Claudia Quezada](https://drive.google.com/file/d/1-F7GASr8x-SAVMn6RdiJhWnXOzWHE345/view?usp=sharing)_
 
 * Prototipo2: Tras la entrevista detectamos que es muy importante conocer a
 los pokémon por Tipo, independiente del tipo de juego. Luego están las
