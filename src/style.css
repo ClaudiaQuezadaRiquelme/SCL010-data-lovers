@@ -1,3 +1,5 @@
+
+
 @font-face {
 	font-family: "Pokemon_Hollow";
 	color: #ff8000;
@@ -54,34 +56,41 @@
   margin: 1em;*/
 }
 
-section div{
-	/*background-color: pink;*/
-	/*height: 300px; width: 400px;
-	background-size: 400px 300px;*/
-	display: inline;
-	/*border: 5px solid black;*/
-}
-
-
-
-
-section div img {
-	display: inline;
+ div {
+	
+	height: 350px; 
+	width: 300px;
+	background-size: 350px 300px;
+	
+	border: 5px solid black;
 	background: url(https://i.pinimg.com/originals/dc/92/80/dc9280d6d991e4dfdaff0b16bf4764f8.jpg);
-	/*background-image: url(https://i.pinimg.com/originals/dc/92/80/dc9280d6d991e4dfdaff0b16bf4764f8.jpg);*/
-	background-repeat: repeat-y;
-	flex-direction: row;
-}
-
-.granContenedor{
-	display: inline;
-	background: url(https://i.pinimg.com/originals/dc/92/80/dc9280d6d991e4dfdaff0b16bf4764f8.jpg);
-	/*background-image: url(https://i.pinimg.com/originals/dc/92/80/dc9280d6d991e4dfdaff0b16bf4764f8.jpg);*/
-	background-repeat: repeat-y;
-	background-repeat: repeat-x;
-	flex-direction: row;
+	/*background-repeat: repeat-y;*/
+	/*background-repeat: repeat-x;*/
 	color: white;
+	/*flex-direction: row;*/
+	/*display: inline;*/
 }
+
+article .bigContenedor{
+	display: inline;
+	text-decoration: none;
+ 	list-style-type: none;
+ 	margin: 0px;
+  	padding: 0;
+  	display: block;
+}
+
+
+
+/*section img {
+	display: inline;
+	
+	background-image: url(https://i.pinimg.com/originals/dc/92/80/dc9280d6d991e4dfdaff0b16bf4764f8.jpg);
+	
+	flex-direction: row;
+}
+*/
+
 
 .phraseColor{
 background-color: : #ff8000;

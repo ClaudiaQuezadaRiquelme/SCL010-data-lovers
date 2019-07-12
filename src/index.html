@@ -34,9 +34,10 @@
     </nav>
  </header>
 
+
     <section>
-              <div class="granContenedor">
-              <select class=""  id="select_type">
+        <article class="umo">
+            <select class="granContenedor"  id="select_type">
                   <option value="all" selected="true" disabled="disabled">Tipos de Pokémon</option>
                   <option value="Water">Agua</option>
                   <option value="Bug">Bicho</option>
@@ -49,28 +50,34 @@
                   <option value="Normal">Normal</option>
                   <option value="Grass">Planta</option>
                   <option value="Psychic">Psíquico</option>
-                  <option value="Rock">Roca</option>
+                  <option value="Rock">Roca</option>                                                                                                                                          
                   <option value="Ground">Tierra</option>
                   <option value="Poison">Veneno</option>
                   <option value="Flying">Volador</option>
-                </select>
-              <form class="" id="searchBar">
-                <input class="barraBusqueda" id="search" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="" id="" type="button">Buscar</button>
-              </form>
-              <article id="info"></article>
-              <div id="pokes"></div>
-              </div>
-    </section>
+            </select>
+          
+            
 
-    <footer>
-       
+            <form class="bigContenedor" id="searchBar">
+                  <input class="barraBusqueda" id="search" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="" id="" type="button">Buscar</button>
+            </form>
+      
+          </article>    
+        <article class="bigContenedor"> 
+                  <article id="info"></article>
+           
+    
+        <article class="bigContenedor" id="pokes"></article>
         
-    </footer>
+    
 
-    <script src="./data/pokemon/pokemon.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-
+        <script src="./data/pokemon/pokemon.js"></script>
+        <script src="data.js"></script>
+        <script src="main.js"></script>
+     
+        
+        </article>
+        </section>
   </body>
 </html>
