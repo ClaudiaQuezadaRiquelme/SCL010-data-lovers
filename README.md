@@ -87,7 +87,7 @@ entrevista con algún conocedor de Pokémon. Como primer paso, buscamos
 conocer a alguien ligado a Pokémon, no necesariamente ligado a Pokémon GO.
 
 _Escuchar entrevista a Hector Quezada por Claudia Quezada en 
-[Entrevista a Hector Quezada por Claudia Quezada](https://drive.google.com/file/d/1-F7GASr8x-SAVMn6RdiJhWnXOzWHE345/view?usp=sharing)_
+[Este link](https://drive.google.com/file/d/1-F7GASr8x-SAVMn6RdiJhWnXOzWHE345/view?usp=sharing)_
 
 * Prototipo2: Tras la entrevista detectamos que es muy importante conocer a
 los pokémon por Tipo, independiente del tipo de juego. Luego están las
