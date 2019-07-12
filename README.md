@@ -4,14 +4,12 @@
 
 * [Preámbulo](#preámbulo)
 * [Descripción](#resumen-del-proyecto)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Parte opcional](#parte-opcional-hacker-edition)
-* [Consideraciones técnicas](#consideraciones-técnicas)
-* [Primeros pasos](#primeros-pasos)
-* [Contenido de referencia](#contenido-de-referencia)
-* [Checklist](#checklist)
+* [Etapas del Proyecto](#Etapas-del-Proyecto)
+* [1 Definición del producto](#1-Definición-del-producto)
+* [2 Historia de usuario](#2-Historia-de-usuario)
+* [3 Diseño de la Interfaz de Usuario](#3-Diseño-de-la-Interfaz-de-Usuario)
+* [4 Funciones Importantes](#4-Funciones-Importantes)
+* [4 Organización del Equipo](#4-Organización-del-Equipo)
 
 ***
 
@@ -29,8 +27,6 @@ hacerlo es creando _interfaces_ y _visualizaciones_.
 
 En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
 izquierda se puede construir una interfaz amigable y entendible por el usuario.
-
-![json-interfaz](readmeImg/pokemon-go.jpg)
 
 ## **2. Resumen del proyecto**
 
